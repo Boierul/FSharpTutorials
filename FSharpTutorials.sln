@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSharpTutorials", "FSharpTutorials\FSharpTutorials.csproj", "{AC3B0612-5EFB-434B-8917-A2EE57FC8E23}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "University", "University\University.fsproj", "{5B2C0ACF-C61B-4755-949B-87344F6D8AD7}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mini-Project", "Mini-Project\Mini-Project.fsproj", "{284DA713-5637-4177-A862-7096C579DE78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC3B0612-5EFB-434B-8917-A2EE57FC8E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC3B0612-5EFB-434B-8917-A2EE57FC8E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC3B0612-5EFB-434B-8917-A2EE57FC8E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC3B0612-5EFB-434B-8917-A2EE57FC8E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B2C0ACF-C61B-4755-949B-87344F6D8AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B2C0ACF-C61B-4755-949B-87344F6D8AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B2C0ACF-C61B-4755-949B-87344F6D8AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B2C0ACF-C61B-4755-949B-87344F6D8AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{284DA713-5637-4177-A862-7096C579DE78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{284DA713-5637-4177-A862-7096C579DE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{284DA713-5637-4177-A862-7096C579DE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{284DA713-5637-4177-A862-7096C579DE78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
