@@ -43,6 +43,7 @@
     </ItemGroup>
     <ItemGroup>
       <Compile Include="Sprint1.fs" />
+      <Compile Include="Sprint2.fs" />
     </ItemGroup>
     <Import Project="$(FSharpTargetsPath)" Condition="Exists('$(FSharpTargetsPath)')" />
 </Project>
