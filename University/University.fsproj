@@ -47,6 +47,8 @@
       <None Include="Session3.fsx" />
       <None Include="Session4.fsx" />
       <None Include="Session5.fsx" />
+      <Compile Include="Session6.fs" />
+      <Compile Include="Session6_Ex.fs" />
     </ItemGroup>
     <Import Project="$(FSharpTargetsPath)" Condition="Exists('$(FSharpTargetsPath)')" />
 </Project>

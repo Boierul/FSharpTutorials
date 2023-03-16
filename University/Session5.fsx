@@ -82,7 +82,6 @@ let allPositivesList =
           yield i ]
 
 
-
 let comingEvents =
     [ ("Plamesondag", "April 2nd");
       ("Sondergarden", "April 5th");
