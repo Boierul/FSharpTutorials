@@ -62,9 +62,10 @@ let computePrice (drink: Drink) =
         | _ -> failwith "Invalid size"
         
         
-let drinkOne = { Type = Coffee; Size = small }
+let drinkOne = { Type = Juice; Size = small }
 let drinkTwo = { Type = Juice; Size = large }
-let price = computePrice drinkTwo
+let priceTEST = computePrice drinkOne
+let priceTEST2 = computePrice drinkTwo
 
 
 
@@ -89,14 +90,6 @@ let gtgAgent = MailboxProcessor.Start(fun inbox ->
             match msg with
             | OrderDrink(drink, qty) ->
                 let price =
-                    if drink.Type = Coffee then
-                        let coffeePrice = match drink.Size.Name with
-                            | "Small" -> drink.Size.Price + 0.5m
-                            | "Medium" -> drink.Size.Price
-                            | "Large" -> drink.Size.Price + 1.0m
-                            | _ -> failwith "Invalid size"
-                        gtgVAT 25 (coffeePrice * decimal qty)
-                    else
                         gtgVAT 25 (drink.Size.Price * decimal qty)
                 printfn "Please pay DKK %.2f for your %d %s %s drinks. Thanks!" price qty (drink.Size.Name) (match drink.Type with Coffee -> "coffee" | Tea -> "tea" | Juice -> "juice")
             | LeaveAComment(comment) ->
@@ -115,6 +108,6 @@ let leaveComment (comment: string) =
     gtgAgent.Post(LeaveAComment(comment))
 
 // TESTING: Order two small lattes and leave a comment
-orderDrink { Type = Coffee; Size = small } 2
+orderDrink { Type = Tea; Size = medium } 2
 leaveComment "Comment-super!"
 
